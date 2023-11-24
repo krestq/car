@@ -1,0 +1,179 @@
+body{
+    min-height: 100%;
+    width: 99%;
+    background-image: url(skyreborn.jpg);
+    background-size: cover;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+   
+}
+.container{
+    animation: car 6s linear forwards;
+    display: flex; 
+    flex-flow: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+
+}
+@keyframes car 
+{ 0%{
+    left: 0;
+}100%{
+    left: 1600px;
+}
+   
+
+    
+}
+.road {
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(road.jpg) ;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:2;
+    background-repeat: repeat-x;
+    animation: road 6s linear forwards;
+
+}
+@keyframes road
+{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.city{
+    height: 900px;
+    width: 500%;
+    background-image: url(pngwing.com.png);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 170px;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 6s linear forwards;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.bodycar{
+    height: 100px;
+    width: 400px;
+    background-color: rgb(181, 35, 166);
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    z-index: 3;
+    border-bottom-left-radius: 50px;
+    
+
+    
+
+}
+
+.tophead{
+    border-top: 90px solid rgb(0, 51, 255);
+    border-left:  50px solid transparent;
+    width: 350px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 110px;
+    z-index: 4;
+    border-radius: 20px;
+    
+
+    
+}
+.okno{
+    background-color:  rgb(0, 162, 255);
+    position: absolute;
+    margin-left: 20px; 
+    width: 15px; 
+    height: 100px;
+    transform: skew(15deg);
+    z-index: 3;
+    left: 260px;
+    right: 0;
+    bottom: 200px;
+    
+   
+}
+
+.koleso1{
+    
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: black;
+        position: absolute;
+        left: 40px;
+        right: 0;
+        bottom: 60px;
+        z-index: 6;
+        
+
+}
+
+
+.koleso{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: black;
+        position: absolute;
+        left: 270px;
+        right: 0;
+        bottom: 60px;
+        z-index: 6;
+      
+
+}
+
+
+
+.fara{
+    height: 30px;
+    width: 50px;
+    border-radius: 10% 45%;
+    background-color: yellow;
+    position: absolute;
+    bottom: 150px;
+    left: 350px;
+    z-index: 6;
+   
+
+}
+
+
+.fara2{
+    height: 30px;
+    width: 50px;
+    border-radius: 10% 45% 80%;
+    background-color: rgb(181, 35, 35);
+    position: absolute;
+    left: 0px;
+    right: 0;
+    bottom: 150px;
+    z-index: 5;
+    
+
+}
+
+
+
+
+
+
